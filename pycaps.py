@@ -1,7 +1,18 @@
+# Descrição: Modificar texto para maiúscula/minúscula
+# Autor: rrs.arq
+
 # Definição das variáveis para o loop do programa
+
 opcao = 0
 
-# Definição das funções maiúsculo e minúsculo 
+# Função de limpar
+
+from os import system, name
+def clear():
+    if name == "nt":
+        _ = system("cls")
+
+# Definição das funções maiúsculo e minúsculo
 
 def maiusculo(texto):
     texto=input("Cole aqui texto para deixar em maiúsculo: ")
@@ -21,12 +32,13 @@ def minusculo(texto):
 
 # Rotina de saída
 
-def saida():
-    sair = input("Digite S para sair ou qualquer outra para continuar: ")
-    if sair == "S":
+def saida():          
+    sair = input("Digite S para sair, L para limpar ou qualquer outra para continuar: ")
+    sair = sair.lower()
+    if sair == "s":
         exit()
-    elif sair == "s":
-        exit()
+    elif sair == "l":
+        clear()
     else:
         print("---")
         
