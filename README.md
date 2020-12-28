@@ -1,6 +1,6 @@
 # pycaps
 
-## Simple program to change text case, using the command line
+## Simple program to change the text case, using the command line
 
 A Python test program, useful when you are renaming files
 
