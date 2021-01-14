@@ -2,7 +2,7 @@
 
 ## Simple program to change the text case, using the command line
 
-A simle Python program, useful when you are renaming files
+A simple Python program, useful when you are renaming files
 
 ## Usage
 
